@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Form Validation</title>
+ </head>
+ <body>
+ <h1>Sign Up Form</h1>
+ <form action="/submit" method="POST">
+ <!-- Required Field -->
+ <label for="username">Username:</label>
+ <input type="text" id="username" name="username" required
+/><br><br>
+ <!-- Email Validation -->
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email" required /><br><br>
+ <!-- Number Validation -->
+ <label for="age">Age:</label>
+ <input type="number" id="age" name="age" min="18" max="60"
+required /><br><br>
+ <!-- Pattern Validation -->
+ <label for="phone">Phone Number:</label>
+ <input type="text" id="phone" name="phone" pattern="\d{10}"
+title="Enter a 10-digit phone number" required /><br><br>
+ <!-- Password Validation -->
+  <label for="password">Password:</label>
+ <input type="password" id="password" name="password" minlength="8"
+maxlength="16" required /><br><br>
+ <!-- Submit Button -->
+ <button type="submit">Sign Up</button>
+ </form>
+ </body>
+</html>
