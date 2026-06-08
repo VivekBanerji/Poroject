@@ -53,6 +53,49 @@
             margin: 0 auto;
             border-radius: 50%;
         }
+        .contact-form {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .contact-form h3 {
+            margin-top: 0;
+            text-align: center;
+            color: #333;
+        }
+        .contact-form label {
+            display: block;
+            fontstyle: bold;
+            margin-bottom: 5px;
+            color: #6e1d1d;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            display: block;
+            width: 20%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            position: center;
+            display: block;
+            max-width: 300px;
+            margin: auto;
+
+        }
+
 
     </style>
 
@@ -124,6 +167,18 @@
             <li>Private Bus Tracking Live System (Java, MySQL, GPS API): Built a real-time tracking system with nearby stop detection.</li>
             <li>Mini Phone Online Management System (Java, MySQL): Developed an inventory and sales management application.</li>
         </ul>
+    </section>
+    <section>
+        <form class="contact-form" id="contact">
+            <h3>Contact Me</h3>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
     </main>
     <footer>
