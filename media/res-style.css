@@ -1,11 +1,11 @@
  body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f2f7fb;
+      background: #f9ffff;
       color: #1a1a1a;
     }
     .page-wrapper {
-      max-width: 1000px;
+      max-width: 85%;
       margin: 0 auto;
       padding: 20px;
     }
@@ -39,7 +39,7 @@
     }
     .card img {
       width: 100%;
-      height: auto;
+      height: 200px;
       display: block;
     }
     .card-content {
@@ -48,14 +48,14 @@
     .card-content h2 {
       margin: 0 0 10px;
       font-size: 1.2rem;
-      color: #333;
+      color: #2e0f0f;
     }
     .card-content p {
       margin: 0;
       color: #666;
       font-size: 0.95rem;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 667px) {
       .page-wrapper {
         padding: 10px;
       }
@@ -66,7 +66,7 @@
         font-size: 1.5rem;
       }
     }
-    @media screen and (max-width: 768px) {
+    @media all and (max-width: 768px) {
         .page-wrapper {
             padding: 15px;
         }
@@ -77,4 +77,16 @@
         font-size: 1.5rem;
       }
         
+    }
+    @media all and (min-width: 992px) {
+        .page-wrapper {
+            padding: 30px;
+        }
+       
+        header {
+        padding: 50px 15px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
     }
