@@ -1,0 +1,80 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f7fb;
+      color: #1a1a1a;
+    }
+    .page-wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 30px 10px;
+      background: #4a90e2;
+      color: white;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    p {
+      margin: 10px 0 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card-content {
+      padding: 18px;
+    }
+    .card-content h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .card-content p {
+      margin: 0;
+      color: #666;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 600px) {
+      .page-wrapper {
+        padding: 10px;
+      }
+      header {
+        padding: 20px 5px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+    @media screen and (max-width: 768px) {
+        .page-wrapper {
+            padding: 15px;
+        }
+        header {
+        padding: 50px 10px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+        
+    }
