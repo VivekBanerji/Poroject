@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Garage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<style>
+    body{
+    background:
+        radial-gradient(circle at 20% 20%, #ff6b00 0%, transparent 20%),
+        radial-gradient(circle at 80% 40%, #ff4500 0%, transparent 20%),
+        radial-gradient(circle at 40% 80%, #ffae00 0%, transparent 20%),
+        #1a0000;
+
+    background-size: cover;
+    .garage-title{
+    text-align:center;
+    font-size:4rem;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    margin:30px 0;
+
+    background:linear-gradient(
+        90deg,
+        #ff6a00,
+        #ffcc00,
+        #ff6a00
+    );
+
+    background-size:200% auto;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    animation:shine 3s linear infinite;
+}
+
+@keyframes shine{
+    to{
+        background-position:200% center;
+    }
+}
+}
+#contact{
+    padding:60px 20px;
+    text-align:center;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:2px solid #1e3a8a;
+    border-radius:5px;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:#fbbf24;
+}
+
+button{
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#fbbf24;
+    color:black;
+}
+.car-img{
+    height: 700px;
+    object-fit: cover;
+}
+.card{
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+  <div class="container">
+    <h1 class="text-center navbar-brand fw-bold text-warning" href="#">My Garage</h1>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12 col-md-6 col-lg-4 py-3">
+                <div class="card shadow bg-white rounded card h-100 shadow">
+                    <img src="./images/Lamborghini Huracán.jpg" alt="Car 1" class="card-img-top car-img">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Lamborghini Huracán</h5>
+                        <p class="card-text">A high-performance sports car with a sleek design and powerful engine.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-3">
+                <div class="card shadow bg-white rounded card h-100 shadow ">
+                        <img src="./images/BMW.jpg" alt="Car 1" class="card-img-top car-img">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">BMW M4 Competition Coupé</h5>
+                        <p class="card-text">A powerfully designed elite sporting icon. The most powerful BMW M4
+                            Competition Coupé with M xDrive delivers 390 kW (530 hp) </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-3">
+                <div class="card shadow bg-white rounded card h-100 shadow ">
+                    <img src="./images/Ferari.jpg" alt="Car 1" class="card-img-top car-img">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Ferrari 488 Pista</h5>
+                        <p class="card-text">Ferrari's most powerful and fastest road-going car ever.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-3">
+                <div class="card shadow bg-white rounded card h-100 shadow ">
+                    <img src="./images/Mustange.jpg" alt="Car 1" class="card-img-top car-img">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Ford Mustang</h5>
+                        <p class="card-text">A classic American muscle car with a powerful engine and sleek design.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-3">
+                <div class="card shadow bg-white rounded card h-100 shadow ">
+                    <img src="./images/Porshe 911.jpg" alt="Car 1" class="card-img-top car-img">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Porsche 911</h5>
+                        <p class="card-text">A legendary sports car with a distinctive design and exceptional
+                            performance.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 py-3">
+                <div class="card shadow bg-white rounded card h-100 shadow ">
+                    <img src="./images/toyota supra.jpg" alt="Car 1" class="card-img-top car-img">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Toyota Supra</h5>
+                        <p class="card-text">A modern take on the classic American muscle car, featuring a powerful
+                            engine and sleek design.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<section id="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <textarea rows="5" placeholder="Enter Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
