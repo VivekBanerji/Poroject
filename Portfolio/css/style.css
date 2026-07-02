@@ -1,0 +1,64 @@
+
+.hero{
+    height:100vh;
+    background:url("/Portfolio/images/about.jpg") center center/cover no-repeat;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero div{
+    position:relative;
+    z-index:1;
+}
+
+
+#about img{
+    max-height:400px;
+}
+
+
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+.card-img-top {
+    width: 100%;
+    height: 250px;   /* Same height for all images */
+    object-fit: cover;
+}
+
+form{
+    background:#f8f9fa;
+    padding:30px;
+    border-radius:10px;
+}
+
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.2rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+}
+
+@media(min-width:769px) and (max-width:1024px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+}
