@@ -46,13 +46,32 @@
 //         console.log(arr[i]);
 //    }
 // }
-let greeting = "Hello, ";
-let name = "Vivek Banerji";
+// let greeting = "Hello, ";
+// let name = "Vivek Banerji";
 
-let textEl = document.getElementById("text-el");
+// let textEl = document.getElementById("text-el");
 
-function hello() {
-    textEl.innerText = name
+// function hello() {
+//     textEl.innerText = name
+// }
+
+// 1. Grab the save-el paragrah and store it in a variable called saveEl
+let countEl = document.getElementById("count-el")
+let count = 0
+let saveEl = document.getElementById("save-el")
+
+function increment() {
+    count += 1
+    countEl.textContent = count
 }
+
+function save() {
+    let saveStr = count + " - "
+    // saveEl.innerHTML += saveStr
+    saveEl.textContent += saveStr
+    count = 0
+    countEl.textContent = count
+}
+
 
 
